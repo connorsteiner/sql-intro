@@ -14,4 +14,6 @@
 -- | 2020 | 30       |
 -- +------+----------+
 
+SELECT year, count() as '# of teams' FROM teams GROUP BY year;
 
+SELECT count(distinct(year)) as '# of rows' FROM teams;
